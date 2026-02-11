@@ -1,0 +1,24 @@
+192.78.98.48
+[frontend]
+192.78.98.45
+192.78.98.46
+192.78.98.47
+
+[backend]
+192.78.98.45
+192.78.98.46
+192.78.98.47
+
+[web]
+172.31.73.143
+
+[roboshop:children]
+frontend
+backend
+
+[local]
+localhost
+
+[local:vars]
+COURSE="Ansible from inventory"
+NAME="Ansible from inventory"
