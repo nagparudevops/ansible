@@ -1,5 +1,7 @@
 - name: ping the server
   hosts: web
+  become: yes
+
   tasks:
-  - name: ping the web server
-    ansible.builtin.ping:
+    - name: ping the server
+      ansible.builtin.ping:
