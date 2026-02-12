@@ -1,16 +1,16 @@
--name: Hello World
+- name: Hello World
 #hosts: web
-hosts: local
-connection: local
-tasks:
+  hosts: local
+  connection: local
+  tasks:
 - name: print hello World
   ansible.builtin.debug:
   msg: "Hello World!"
 
-  -name: PLAY-2
-  hosts:  local
-  connection: local
-  tasks:
-  - name: play-2 and task-1
+-  name: PLAY-2
+   hosts:  local
+   connection: local
+   tasks:
+- name: play-2 and task-1
   ansible.builtin.debug:
    msg: "Hello from PLAY-2 and TASK-1"
